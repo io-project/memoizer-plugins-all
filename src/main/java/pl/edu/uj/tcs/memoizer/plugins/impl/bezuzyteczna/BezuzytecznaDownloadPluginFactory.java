@@ -13,7 +13,7 @@ public class BezuzytecznaDownloadPluginFactory extends CommonDownloadPluginFacto
 
 	@Override
 	public String getServiceName() {
-		return "Wiedza bezużyteczna";
+		return "Wiedza bezuzyteczna";
 	}
 
 	@Override
