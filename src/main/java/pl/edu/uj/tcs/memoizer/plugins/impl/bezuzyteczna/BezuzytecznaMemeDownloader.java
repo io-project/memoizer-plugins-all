@@ -49,7 +49,7 @@ List<Meme> lst = new ArrayList<Meme>();
 				
 
 				String fullTitle = extractTitleFromImgTag(image), title = null, description = null;
-				int split = fullTitle.indexOf('�');
+				int split = fullTitle.indexOf('-');
 				System.out.println(fullTitle+" "+split);
 				if(split<0)
 					title = fullTitle;

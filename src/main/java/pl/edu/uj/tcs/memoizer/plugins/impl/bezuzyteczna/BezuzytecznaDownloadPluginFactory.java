@@ -11,6 +11,15 @@ import pl.edu.uj.tcs.memoizer.serialization.IStateObject;
 public class BezuzytecznaDownloadPluginFactory extends CommonDownloadPluginFactory{
 
 
+	public BezuzytecznaDownloadPluginFactory(){
+		super.addView(EViewType.CHRONOLOGICAL, "BezuzytecznaChrono", "http://www.bezuzyteczna.pl/page");
+		super.addView(EViewType.UNSEEN, "BezuzytecznaChrono", "http://www.bezuzyteczna.pl/page");
+		super.addView(EViewType.QUEUE, "BezuzytecznaQueue", "http://www.bezuzyteczna.pl/poczekalnia/page");
+		super.addView(EViewType.FAVOURITE, "BezuzytecznaTopPercent", "http://www.bezuzyteczna.pl/topka/page");
+		super.addView(EViewType.RANDOM, "BezuzytecznaRandom", "http://www.bezuzyteczna.pl/losowa-wiedza");
+		super.addView(EViewType.SEARCH, "BezuzytecznaSearch", "http://www.bezuzyteczna.pl/search?v=");
+	}
+	
 	@Override
 	public String getServiceName() {
 		return "Wiedza bezuzyteczna";
